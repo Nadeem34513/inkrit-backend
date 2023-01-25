@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-app.all("/contact", (req, res) => {
+app.get("/contact", (req, res) => {
   console.log("Just got a request!");
   res.send({ msg: "hello" });
 });
