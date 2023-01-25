@@ -60,7 +60,7 @@ app.post("/send", (req, res) => {
       subject: data.subject,
       text: `${data.name} <${data.email}> \n${data.message}`,
     };
-
+    console.log(mail);
     //3.
     transporter.sendMail(mail, (err, data) => {
       if (err) {
