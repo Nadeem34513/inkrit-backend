@@ -55,10 +55,10 @@ app.post("/send", (req, res) => {
 
     //2. You can configure the object however you want
     const mail = {
-      from: "test 123",
+      from: data.email,
       to: "inadeemnoushad@gmail.com",
       subject: data.subject,
-      text: `${data.name} <${data.email}> \n${data.message}`,
+      text: `${data.message}`,
     };
     console.log(mail);
     //3.
