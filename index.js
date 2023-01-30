@@ -27,11 +27,11 @@ app.post("/contact", (req, res) => {
 });
 
 var transporter = nodemailer.createTransport({
-  host: "smtp.mailtrap.io",
-  port: 2525,
+  host: "smtp.zoho.in",
+  port: 465,
   auth: {
-    user: "0a71a32d9c99a2",
-    pass: "233a6e4220243d",
+    user: process.env.USER,
+    pass: process.env.PASS,
   },
 });
 
